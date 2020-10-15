@@ -11,12 +11,10 @@ console.log(num1 * num2);
 
 
 // Del 2
-
-const person = {
+const personObj = {
     firstName: 'mikael',
     lastName: 'blomqvist',
     age: 40
 }
 
-
-console.log(`Hej, mitt namn är ${person.firstName} ${person.lastName} och jag är ${person.age} år gammal`);
+console.log(`Hej, mitt namn är ${personObj.firstName} ${personObj.lastName} och jag är ${personObj.age} år gammal`);
