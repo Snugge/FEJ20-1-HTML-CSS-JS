@@ -21,9 +21,11 @@ const greet = function(name) {
 };
 
 // som arrow funktion ->
-const greetArr = (name) => {
-    console.log(`Hej ${name} hur mår du?`);
-};
+const greetArr = name => console.log(`Hej ${name} hur mår du?`);
+
+// const greetArr = (name) => {
+//     console.log(`Hej ${name} hur mår du?`);
+// };
 
 
 
@@ -47,10 +49,13 @@ const tip = function(sum, percent) {
 
 
 // som arrow funktion ->
-const tipArr = (sum, procent) => {
-    let total = sum + sum * procent;
-    return total;
-};
+const tipArr = (sum, procent) => sum + sum * procent;
+
+// const tipArr = (sum, procent) => {
+//     let total = sum + sum * procent;
+//     return total;
+// };
+
 
 
 // # Bonus 
