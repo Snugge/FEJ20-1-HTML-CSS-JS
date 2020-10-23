@@ -35,12 +35,9 @@ formVolCalculate.addEventListener('submit', (e) => {
     let inB = document.getElementById('bredd').value;
     let inL = document.getElementById('langd').value;
     let inH = document.getElementById('hojd').value;
-    let sum = calculateVol(inB, inL, inH);
 
-    //console.log(sum);
-    //console.log(inB, inL, inH);
-
-    if(inB != '' && inL != '' && inH != ''){
+    if(inB != '' && inL != '' && inH != '') {
+        let sum = calculateVol(inB, inL, inH);
         formulaOutputVol.innerHTML = `Volymen är: <b>${sum}cm<sup>3</sup></b>`;
     } else {
         formulaOutputVol.innerHTML = `Du måste fylla i <b>alla fält</b> innan det går att beräkna!`;
@@ -61,9 +58,9 @@ const calculateArea = (d) => {
 formAreaCalculate.addEventListener('submit', (e) => {
     e.preventDefault();
     let inD = document.getElementById('diameter').value
-    let sum = calculateArea(inD);
-
-    if(inD != ''){
+    
+    if(inD != '') {
+        let sum = calculateArea(inD);
         formulaOutputArea.innerHTML = `Arean är: <b>${sum}cm<sup>2</sup></b>`;
     } else {
         formulaOutputArea.innerHTML = `Du måste fylla i <b>alla fält</b> innan det går att beräkna!`;
