@@ -1,0 +1,20 @@
+html, body {
+    height: 100vh;
+}
+.border {
+    border: 1px solid #c3c3c3
+}
+.clock {
+    font-size: 2.6rem;
+}
+
+.clockWrapper {
+    width: 250px;
+    height: 250px;
+    color: #fff;
+    background: url(pexels-dana-tentis-370799.jpg) no-repeat center center fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
